@@ -1,9 +1,11 @@
 package classes;
 
+import interfaces.Divice;
+
 /**
  * Created by Yevgeni on 05.02.2016.
  */
-public class Toster {
+public class Toster implements Divice{
     private String on = null;
     private String off = null;
 

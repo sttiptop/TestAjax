@@ -8,7 +8,10 @@ import interfaces.Divice;
 public class Computer implements Divice {
     private String on = null;
     private String off = null;
-
+    public Computer(){
+        turnOn();
+        turnOff();
+    }
 
     public void turnOn() {
         on = this.getClass().getName() + ": I'm turned On";

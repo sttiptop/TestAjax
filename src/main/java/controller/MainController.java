@@ -35,25 +35,18 @@ public class MainController {
     public
     @ResponseBody
     Response getCharNum(@RequestParam(value = "text") String key, @RequestParam(value = "action") String action) {
-        System.out.println(key);
-        System.out.println(action);
+
         Response msg = new Response();
-        String s=null;
         if (key != null) {
             try {
-                int id = keywordsService.getClassesId(key);
+                int id = keywordsService.getClassesId(key.toLowerCase());
                 ClassesEntity classesEntity = classesService.getClasses(id);
                 Object toggle = Class.forName(classesEntity.getClassname()).newInstance();
-                System.out.println(toggle.getClass());
                 if (action.equalsIgnoreCase("on")) {
 
                     Method method = toggle.getClass().getMethod("getOn");
-                    s=(String)method.invoke(toggle);
-                    System.out.println(s);
                     msg.setText((String) method.invoke(toggle));
                     msg.setCount(action);
-                    System.out.println(msg.getCount());
-                    System.out.println(msg.getText());
                 }
                 if (action.equalsIgnoreCase("off")) {
                     Method method = toggle.getClass().getMethod("getOff");

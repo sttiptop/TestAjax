@@ -9,6 +9,10 @@ public class Microwave implements Divice {
     private String on = null;
     private String off = null;
 
+    public Microwave() {
+        turnOff();
+        turnOn();
+    }
 
 
     public void turnOn() {
