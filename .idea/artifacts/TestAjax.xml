@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="TestAjax">
+    <output-path>$PROJECT_DIR$/out/artifacts/TestAjax</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="TestAjax/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="TestAjax" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="javax.json.processing-1.0" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.0" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
+          <element id="library" level="project" name="Spring MVC-3.2.16.RELEASE" />
+          <element id="library" level="project" name="Spring-3.2.16.RELEASE" />
+          <element id="library" level="project" name="Hibernate 4.2.2-4.2.2" />
+          <element id="library" level="project" name="org.postgresql:postgresql:9.4-1206-jdbc4" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
